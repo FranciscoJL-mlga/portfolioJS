@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <title>Determinar Mayúsculas o Minúsculas</title>
+</head>
+<style>
+
+  body {
+    background-image: url('./images/fondojs.webp'); /* Cambia esta ruta a la de tu imagen */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Para que la imagen de fondo no se mueva al hacer scroll */
+  }
+</style>
+<body>
+  <form class="w-50 mx-auto border border-primary p-5 mt-5" onsubmit="return determinarMayusculasMinuculas()">
+    <h1 class="text-danger text-center">Determinar Mayúsculas o Minúsculas</h1>
+    <h3 class="text-primary text-center">Introducción de datos</h3>
+        
+    <div class="mb-3">
+      <label for="cadena" class="form-label text-primary">Cadena de Caracteres</label>
+      <input type="text" class="form-control" id="cadena" required>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Determinar</button>
+    <p id="resultado" class="mt-3"></p>
+  </form>
+  
+  <script src="js/mayusculas-minusculas.js"></script>
+</body>
+</html>
